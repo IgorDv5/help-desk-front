@@ -36,6 +36,10 @@ import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
+import { NgxMaskModule } from 'ngx-mask';
+
+
+
 
 @NgModule({
   declarations: [
@@ -45,7 +49,7 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
     HeaderComponent,
     TecnicoListComponent,
     LoginComponent,
-    TecnicoCreateComponent
+    TecnicoCreateComponent,
   ],
   imports: [
     BrowserModule,
@@ -75,7 +79,9 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
       timeOut: 4000,
       closeButton: true,
       progressBar: true
-     })
+     }),
+    NgxMaskModule.forRoot()
+     
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]

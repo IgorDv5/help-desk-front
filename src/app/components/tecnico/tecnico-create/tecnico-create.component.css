@@ -25,6 +25,11 @@ img{
     justify-content: space-between;
 }
 
+mat-icon{
+    opacity: .8;
+}
+
 button{
     margin-top: .5rem;
 }
+
