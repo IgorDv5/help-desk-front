@@ -23,3 +23,10 @@ table {
 
   }
 
+.edit{
+  color: rgb(20, 134, 183);
+}
+
+.delete{
+  color: rgb(183, 13, 13);
+}
