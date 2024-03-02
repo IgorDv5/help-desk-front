@@ -42,9 +42,11 @@
           <mat-form-field class="fullWidth" appearance="fill">
             <mat-label>Senha</mat-label>
             <input
+            type="password"
             [(ngModel)]="cliente.senha"
             name="senha"
             [disabled]="true"
+            
             matInput>
             <mat-icon matSuffix>password</mat-icon>
           </mat-form-field>
