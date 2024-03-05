@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Chamado } from 'src/app/models/chamado';
@@ -16,6 +18,7 @@ import { TecnicoService } from 'src/app/services/tecnico.service';
 })
 export class ChamadoCreateComponent implements OnInit {
 
+
   chamado: Chamado = {
     prioridade: '',
     status: '',
@@ -26,7 +29,7 @@ export class ChamadoCreateComponent implements OnInit {
     nomeCliente: '',
     nomeTecnico: '',
   }
-
+  
   clientes: Cliente[] = [];
   tecnicos: Tecnico[]= []
 
